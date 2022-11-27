@@ -1,13 +1,17 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
+  "type": "module",
   "description": "myFirstProject",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
   "repository": {
-    "type": "git",
+    "type": "module",
     "url": "git+ssh://git@github.com/Maikai1er/backend-project-44.git"
   },
   "author": "Maikai1er",
