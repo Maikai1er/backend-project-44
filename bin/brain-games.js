@@ -1,5 +1,4 @@
 #!/usr/bin/node node#
-import greeting from '../src/cli.js';
+import evenOrOdd from "../bin/brain-even.js";
 
-console.log('Welcome to the Brain Games!');
-greeting();
+evenOrOdd();
