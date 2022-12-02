@@ -9,44 +9,29 @@ const calc = () => {
     const randomFunction = Math.floor(Math.random() * 3);
     const firstNumber = Math.floor(Math.random() * 10);
     const secondNumber = Math.floor(Math.random() * 10);
+    let correctAnswer;
     switch (randomFunction) {
       case 0:
         console.log(`Question: ${firstNumber} * ${secondNumber}`);
-        const userAnswer = readlineSync.question('Your answer: ');
-        const correctAnswer = firstNumber * secondNumber;
-        if (userAnswer.toString() === correctAnswer.toString()) {
-          console.log('Correct!');
-          i += 1;
-        } else {
-          console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again!`);
-          return;
-        };
+        correctAnswer = firstNumber * secondNumber;
         break;
       case 1:
         console.log(`Question: ${firstNumber} + ${secondNumber}`);
-        const userAnswer1 = readlineSync.question('Your answer: ');
-        const correctAnswer1 = firstNumber + secondNumber;
-        if (userAnswer1.toString() === correctAnswer1.toString()) {
-          console.log('Correct!');
-          i += 1;
-        } else {
-          console.log(`${userAnswer1} is wrong answer ;(. Correct answer was ${correctAnswer1}.\nLet's try again!`);
-          return;
-        };
+        correctAnswer = firstNumber + secondNumber;
         break;
       case 2:
         console.log(`Question: ${firstNumber} - ${secondNumber}`);
-        const userAnswer2 = readlineSync.question('Your answer: ');
-        const correctAnswer2 = firstNumber - secondNumber;
-        if (userAnswer2.toString() === correctAnswer2.toString()) {
-          console.log('Correct!');
-          i += 1;
-        } else {
-          console.log(`${userAnswer2} is wrong answer ;(. Correct answer was ${correctAnswer2}.\nLet's try again!`);
-          return;
-        };
+        correctAnswer = firstNumber - secondNumber;
         break;
     }
+    const userAnswer = readlineSync.question('Your answer: ');
+    if (userAnswer.toString() === correctAnswer.toString()) {
+      console.log('Correct!');
+      i += 1;
+    } else {
+      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again!`);
+      return;
+    };
   }
   if (i === 3) console.log(`Congratulations`);
 };
