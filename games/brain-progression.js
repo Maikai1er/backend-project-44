@@ -1,8 +1,6 @@
 #!/usr/bin/node node#
 import { greeting, pattern } from '../src/index.js';
 
-console.log('What number is missing in the progression?');
-
 const progression = () => {
   const progressionArray = [];
   let progressionToString = '';

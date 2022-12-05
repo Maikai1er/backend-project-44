@@ -7,12 +7,10 @@
     <list default="true" id="5944aa1f-f23c-43f6-ba94-56070616ad69" name="Changes" comment="Refactored project to match patterns">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/brain-games.js" beforeDir="false" afterPath="$PROJECT_DIR$/bin/brain-games.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/games/brain-calc.js" beforeDir="false" afterPath="$PROJECT_DIR$/games/brain-calc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/games/brain-even.js" beforeDir="false" afterPath="$PROJECT_DIR$/games/brain-even.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/games/brain-gcd.js" beforeDir="false" afterPath="$PROJECT_DIR$/games/brain-gcd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/brain-progression.js" beforeDir="false" afterPath="$PROJECT_DIR$/bin/brain-progression.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games/brain-progression.js" beforeDir="false" afterPath="$PROJECT_DIR$/games/brain-progression.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +82,7 @@
       <workItem from="1670240492339" duration="51000" />
       <workItem from="1670240544571" duration="218000" />
       <workItem from="1670240958341" duration="3194000" />
-      <workItem from="1670244212174" duration="20763000" />
+      <workItem from="1670244212174" duration="22009000" />
     </task>
     <servers />
   </component>
