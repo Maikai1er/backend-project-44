@@ -11,7 +11,8 @@
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "games/brain-even,js",
-    "brain-calc": "games/brain-calc.js"
+    "brain-calc": "games/brain-calc.js",
+    "brain-gcd": "games/brain-gcd.js"
   },
   "repository": {
     "type": "module",
@@ -26,6 +27,7 @@
   "dependencies": {
     "core-js": "^3.26.1",
     "express": "^4.18.2",
+    "lodash": "^4.17.21",
     "make": "^0.8.1",
     "node": "^19.1.0",
     "readline-sync": "^1.4.10"
