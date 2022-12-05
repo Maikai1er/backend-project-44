@@ -1,10 +1,10 @@
 #!/usr/bin/node node#
 import _ from 'lodash';
-import { greeting, pattern } from '../src/index.js';
+import { greeting, pattern, getRandomNumber } from '../src/index.js';
 
 const gcd = () => {
-  const firstNumber = Math.floor(Math.random() * 100);
-  const secondNumber = Math.floor(Math.random() * 100);
+  const firstNumber = getRandomNumber();
+  const secondNumber = getRandomNumber();
   console.log(`Question: ${firstNumber} ${secondNumber}`);
   const divisorsOfFirstNumber = [];
   const divisorsOfSecondNumber = [];

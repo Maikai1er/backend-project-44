@@ -8,6 +8,11 @@ const greeting = () => {
   return name;
 };
 
+const getRandomNumber = () => {
+  const randomNumber = Math.floor(Math.random() * 100);
+  return randomNumber;
+};
+
 const pattern = (correctAnswer) => {
   const userAnswer = readlineSync.question('Your answer: ');
   if (correctAnswer.toString() === userAnswer.toString()) {
@@ -18,4 +23,4 @@ const pattern = (correctAnswer) => {
   }
 };
 
-export { pattern, greeting };
+export { pattern, greeting, getRandomNumber };

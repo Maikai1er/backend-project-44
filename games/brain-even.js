@@ -1,9 +1,9 @@
 #!/usr/bin/node node#
-import { greeting, pattern } from '../src/index.js';
+import { greeting, pattern, getRandomNumber } from '../src/index.js';
 
 const evenOrOdd = () => {
   // Random number definition
-  const number = Math.floor(Math.random() * 100);
+  const number = getRandomNumber();
   let correctAnswer;
   console.log(`Question: ${number}`);
   if (number % 2 === 0) {

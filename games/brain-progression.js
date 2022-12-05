@@ -1,11 +1,11 @@
 #!/usr/bin/node node#
-import { greeting, pattern } from '../src/index.js';
+import { greeting, pattern, getRandomNumber } from '../src/index.js';
 
 const progression = () => {
   const progressionArray = [];
   let progressionToString = '';
   // Defining first number of progression;
-  let valueOfProgression = Math.floor(Math.random() * 20);
+  let valueOfProgression = getRandomNumber();
   let correctAnswer;
   // Defining progression length;
   const min = 5;

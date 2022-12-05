@@ -1,12 +1,12 @@
 #!/usr/bin/node node#
-import { greeting, pattern } from '../src/index.js';
+import { greeting, pattern, getRandomNumber } from '../src/index.js';
 
 const calc = () => {
   // Searching for a random function
   // 0 is a '*', 1 is a '+', 2 is a '-'
   const randomFunction = Math.floor(Math.random() * 3);
-  const firstNumber = Math.floor(Math.random() * 10);
-  const secondNumber = Math.floor(Math.random() * 10);
+  const firstNumber = getRandomNumber();
+  const secondNumber = getRandomNumber();
   let correctAnswer;
   // eslint-disable-next-line default-case
   switch (randomFunction) {
