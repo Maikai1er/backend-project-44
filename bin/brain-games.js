@@ -1,4 +1,5 @@
 #!/usr/bin/node node#
-import evenOrOdd from "../bin/brain-even.js";
-
-evenOrOdd();
+// import evenOrOdd from '../games/brain-even.js';
+import pattern from '../src/index.js';
+// evenOrOdd();
+pattern();
