@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5944aa1f-f23c-43f6-ba94-56070616ad69" name="Changes" comment="">
+    <list default="true" id="5944aa1f-f23c-43f6-ba94-56070616ad69" name="Changes" comment="Refactored project to match patterns">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/brain-games.js" beforeDir="false" afterPath="$PROJECT_DIR$/bin/brain-games.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games/brain-calc.js" beforeDir="false" afterPath="$PROJECT_DIR$/games/brain-calc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games/brain-even.js" beforeDir="false" afterPath="$PROJECT_DIR$/games/brain-even.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games/brain-gcd.js" beforeDir="false" afterPath="$PROJECT_DIR$/games/brain-gcd.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
@@ -54,6 +58,20 @@
       <recent name="C:\Dev\Projects\backend-project-44\bin" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="brain-gcd.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/games/brain-gcd.js" working-dir="$PROJECT_DIR$/games">
+      <method v="2" />
+    </configuration>
+    <configuration name="tesssssst.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/tesssssst.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.tesssssst.js" />
+        <item itemvalue="Node.js.brain-gcd.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -66,7 +84,7 @@
       <workItem from="1670240492339" duration="51000" />
       <workItem from="1670240544571" duration="218000" />
       <workItem from="1670240958341" duration="3194000" />
-      <workItem from="1670244212174" duration="3769000" />
+      <workItem from="1670244212174" duration="20763000" />
     </task>
     <servers />
   </component>
@@ -83,5 +101,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactored project to match patterns" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored project to match patterns" />
   </component>
 </project>

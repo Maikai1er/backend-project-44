@@ -1,25 +1,25 @@
-import readlineSync from 'readline-sync';
+#!/usr/bin/node node#
+import { greeting, pattern } from '../src/index.js';
 
 const evenOrOdd = () => {
-  // Even or Odd Game
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
-  let i = 0;
-  while (i < 3) {
-    // Random number definition
-    const number = Math.floor(Math.random() * 100);
-    console.log(`Question: ${number}`);
-    const yesOrNo = readlineSync.question('Your answer: ');
-    if ((yesOrNo === 'yes') && (number % 2 === 0)) {
-      console.log('Correct!');
-      i += 1;
-    } else if ((yesOrNo === 'no') && (number % 2 !== 0)) {
-      console.log('Correct!');
-      i += 1;
-    } else {
-      console.log(`yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${name}!`);
-      break;
-    }
-  }
-  if (i === 3) console.log(`Congratulations, ${name}!`);
+  // Random number definition
+  const number = Math.floor(Math.random() * 100);
+  let correctAnswer;
+  console.log(`Question: ${number}`);
+  if (number % 2 === 0) {
+    correctAnswer = 'yes';
+  } else correctAnswer = 'no';
+  return correctAnswer;
 };
-export default evenOrOdd;
+
+const playEven = () => {
+  const name = greeting();
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  for (let i = 0; i < 3; i += 1) {
+    const isTrue = pattern(evenOrOdd());
+    if (isTrue === false) break;
+    if (i === 2) console.log(`Congratulations, ${name}!`);
+  }
+};
+
+export default playEven;

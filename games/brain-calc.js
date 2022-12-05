@@ -1,4 +1,5 @@
-import readlineSync from 'readline-sync';
+#!/usr/bin/node node#
+import { greeting, pattern } from '../src/index.js';
 
 const calc = () => {
   // Searching for a random function
@@ -22,12 +23,16 @@ const calc = () => {
       correctAnswer = firstNumber - secondNumber;
       break;
   }
-  const userAnswer = readlineSync.question('Your answer: ');
-  if (userAnswer.toString() === correctAnswer.toString()) {
-    console.log('Correct!');
-    return true;
-  }
-  console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again!`);
-  return false;
+  return correctAnswer;
 };
-export default calc;
+
+const playCalc = () => {
+  const name = greeting();
+  console.log('What is the result of the expression?');
+  for (let i = 0; i < 3; i += 1) {
+    const isTrue = pattern(calc());
+    if (isTrue === false) break;
+    if (i === 2) console.log(`Congratulations, ${name}!`);
+  }
+};
+export default playCalc;

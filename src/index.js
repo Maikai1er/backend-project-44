@@ -1,19 +1,21 @@
 import readlineSync from 'readline-sync';
-import calc from '../games/brain-calc.js';
-import gcd from '../games/brain-gcd.js';
 
-const pattern = () => {
+let name;
+const greeting = () => {
   console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name? ');
+  name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
-  // console.log('What is the result of the expression?');
-  console.log('Find the greatest common divisor of given numbers.');
-  let currentGame = 0;
-  while (currentGame < 3) {
-    const isTrue = gcd();
-    currentGame += 1;
-    if (isTrue === false) break;
-    if (currentGame === 3) console.log(`Congratulations, ${name}!`);
+  return name;
+};
+
+const pattern = (correctAnswer) => {
+  const userAnswer = readlineSync.question('Your answer: ');
+  if (correctAnswer.toString() === userAnswer.toString()) {
+    console.log('Correct!');
+  } else {
+    console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again!`);
+    return false;
   }
 };
-export default pattern;
+
+export { pattern, greeting };
