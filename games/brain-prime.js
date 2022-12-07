@@ -4,7 +4,7 @@ import { greeting, gamePattern, getRandomNumber } from '../src/index.js';
 const isPrime = () => {
   const number = getRandomNumber(0, 20);
   let correctAnswer;
-  if ((number === 0) || (number === 1)) {
+  if (number < 2) {
     correctAnswer = 'no';
     return correctAnswer;
   }
