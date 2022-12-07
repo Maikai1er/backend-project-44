@@ -9,14 +9,14 @@ const isPrime = () => {
     correctAnswer = 'no';
     return correctAnswer;
   }
-  let divisorsCount = 0;
   if (number === 2) correctAnswer = 'yes';
-  for (let i = 2; i < number; i += 1) {
+  let divisorsCount = 0;
+  for (let i = 2; i <= number; i += 1) {
     if (number % i === 0) divisorsCount += 1;
   }
   if (divisorsCount === 0) {
-  } else {
     correctAnswer = 'yes';
+  } else {
     correctAnswer = 'no';
   }
   return correctAnswer;
