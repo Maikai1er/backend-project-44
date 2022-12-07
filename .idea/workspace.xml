@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5944aa1f-f23c-43f6-ba94-56070616ad69" name="Changes" comment="Refactored project to match patterns">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +79,7 @@
       <workItem from="1670240544571" duration="218000" />
       <workItem from="1670240958341" duration="3194000" />
       <workItem from="1670244212174" duration="27175000" />
-      <workItem from="1670340982641" duration="17001000" />
+      <workItem from="1670340982641" duration="17896000" />
     </task>
     <servers />
   </component>

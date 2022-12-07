@@ -22,7 +22,7 @@ const gamePattern = (playRound) => {
       console.log('Correct!');
       n += 1;
     } else {
-      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again!`);
+      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again, ${name}!`);
       break;
     }
   }
