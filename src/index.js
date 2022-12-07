@@ -18,7 +18,7 @@ const gamePattern = (playRound) => {
   for (let i = 0; i < 3; i += 1) {
     const correctAnswer = playRound();
     const userAnswer = readlineSync.question('Your answer: ');
-    if (correctAnswer.toString() === userAnswer.toString()) {
+    if (correctAnswer?.toString() === userAnswer.toString()) {
       console.log('Correct!');
       n += 1;
     } else {
