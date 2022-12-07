@@ -11,7 +11,7 @@ const isPrime = () => {
   }
   if (number === 2) correctAnswer = 'yes';
   let divisorsCount = 0;
-  for (let i = 2; i <= number; i += 1) {
+  for (let i = 2; i < number; i += 1) {
     if (number % i === 0) divisorsCount += 1;
   }
   if (divisorsCount === 0) {
