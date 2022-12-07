@@ -13,9 +13,7 @@
       <change beforePath="$PROJECT_DIR$/games/brain-gcd.js" beforeDir="false" afterPath="$PROJECT_DIR$/games/brain-gcd.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/games/brain-prime.js" beforeDir="false" afterPath="$PROJECT_DIR$/games/brain-prime.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/games/brain-progression.js" beforeDir="false" afterPath="$PROJECT_DIR$/games/brain-progression.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +86,7 @@
       <workItem from="1670240544571" duration="218000" />
       <workItem from="1670240958341" duration="3194000" />
       <workItem from="1670244212174" duration="27175000" />
-      <workItem from="1670340982641" duration="15989000" />
+      <workItem from="1670340982641" duration="16460000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,4 @@
-#!/usr/bin/node node#
+#!/usr/bin/env node
 import { greeting, gamePattern, getRandomNumber } from '../src/index.js';
 
 const evenOrOdd = () => {
