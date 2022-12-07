@@ -1,5 +1,5 @@
 #!/usr/bin/node node#
-import { greeting, pattern, getRandomNumber } from '../src/index.js';
+import { greeting, gamePattern, getRandomNumber } from '../src/index.js';
 
 const progression = () => {
   const progressionArray = [];
@@ -31,6 +31,6 @@ const progression = () => {
 const playProgression = () => {
   greeting();
   console.log('What number is missing in the progression?');
-  pattern(progression);
+  gamePattern(progression);
 };
 export default playProgression;

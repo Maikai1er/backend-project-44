@@ -1,9 +1,13 @@
 #!/usr/bin/node node#
-import { greeting, pattern, getRandomNumber } from '../src/index.js';
+import { greeting, gamePattern, getRandomNumber } from '../src/index.js';
 
 const isPrime = () => {
-  const number = getRandomNumber();
+  const number = getRandomNumber(0, 20);
   let correctAnswer;
+  if ((number === 0) || (number === 1)) {
+    correctAnswer = 'no';
+    return correctAnswer;
+  }
   let divisorsCount = 0;
   if (number === 2) correctAnswer = 'yes';
   for (let i = 2; i < number; i += 1) {
@@ -18,6 +22,6 @@ const isPrime = () => {
 const playIsPrime = () => {
   greeting();
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-  pattern(isPrime);
+  gamePattern(isPrime);
 };
 export default playIsPrime;

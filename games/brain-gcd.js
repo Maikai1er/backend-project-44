@@ -1,10 +1,10 @@
 #!/usr/bin/node node#
 import _ from 'lodash';
-import { greeting, pattern, getRandomNumber } from '../src/index.js';
+import { greeting, gamePattern, getRandomNumber } from '../src/index.js';
 
 const gcd = () => {
-  const firstNumber = getRandomNumber(0, 30);
-  const secondNumber = getRandomNumber(0, 30);
+  const firstNumber = getRandomNumber(0, 10);
+  const secondNumber = getRandomNumber(0, 10);
   console.log(`Question: ${firstNumber} ${secondNumber}`);
   const divisorsOfFirstNumber = [];
   const divisorsOfSecondNumber = [];
@@ -21,7 +21,7 @@ const gcd = () => {
 const playGcd = () => {
   greeting();
   console.log('Find the greatest common divisor of given numbers.');
-  pattern(gcd);
+  gamePattern(gcd);
 };
 
 export default playGcd;

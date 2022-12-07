@@ -1,5 +1,5 @@
 #!/usr/bin/node node#
-import { greeting, pattern, getRandomNumber } from '../src/index.js';
+import { greeting, gamePattern, getRandomNumber } from '../src/index.js';
 
 const calc = () => {
   // Searching for a random function
@@ -29,6 +29,6 @@ const calc = () => {
 const playCalc = () => {
   greeting();
   console.log('What is the result of the expression?');
-  pattern(calc);
+  gamePattern(calc);
 };
 export default playCalc;

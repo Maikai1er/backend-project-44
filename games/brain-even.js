@@ -1,5 +1,5 @@
 #!/usr/bin/node node#
-import { greeting, pattern, getRandomNumber } from '../src/index.js';
+import { greeting, gamePattern, getRandomNumber } from '../src/index.js';
 
 const evenOrOdd = () => {
   // Random number definition
@@ -15,7 +15,7 @@ const evenOrOdd = () => {
 const playEvenOrOdd = () => {
   greeting();
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
-  pattern(evenOrOdd);
+  gamePattern(evenOrOdd);
 };
 
 export default playEvenOrOdd;

@@ -13,7 +13,7 @@ const getRandomNumber = (min = 0, max = 50) => {
   return randomNumber;
 };
 
-const pattern = (playRound) => {
+const gamePattern = (playRound) => {
   let n = 0;
   for (let i = 0; i < 3; i += 1) {
     const correctAnswer = playRound();
@@ -29,4 +29,4 @@ const pattern = (playRound) => {
   if (n === 3) console.log(`Congratulations, ${name}!`);
 };
 
-export { pattern, greeting, getRandomNumber };
+export { gamePattern, greeting, getRandomNumber };
