@@ -10,10 +10,10 @@ const progression = () => {
   // Defining progression length;
   const min = 5;
   const max = 11;
-  const progressionLength = Math.floor(Math.random() * (max - min) + min);
-  const hiddenElementNumber = Math.floor(Math.random() * (progressionLength - min) + min);
+  const progressionLength = getRandomNumber(min, max);
+  const hiddenElementNumber = getRandomNumber(min, progressionLength);
   // Defining progression step;
-  const progressionStep = Math.floor(Math.random() * 10);
+  const progressionStep = getRandomNumber(1, 10);
   for (let i = 0; i < progressionLength; i += 1) {
     progressionArray.push(valueOfProgression);
     valueOfProgression += progressionStep;
@@ -29,12 +29,8 @@ const progression = () => {
 };
 
 const playProgression = () => {
-  const name = greeting();
+  greeting();
   console.log('What number is missing in the progression?');
-  for (let i = 0; i < 3; i += 1) {
-    const isTrue = pattern(progression());
-    if (isTrue === false) break;
-    if (i === 2) console.log(`Congratulations, ${name}!`);
-  }
+  pattern(progression);
 };
 export default playProgression;

@@ -15,13 +15,9 @@ const isPrime = () => {
   return correctAnswer;
 };
 
-const playPrime = () => {
-  const name = greeting();
+const playIsPrime = () => {
+  greeting();
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-  for (let i = 0; i < 3; i += 1) {
-    const isTrue = pattern(isPrime());
-    if (isTrue === false) break;
-    if (i === 2) console.log(`Congratulations, ${name}!`);
-  }
+  pattern(isPrime);
 };
-export default playPrime;
+export default playIsPrime;

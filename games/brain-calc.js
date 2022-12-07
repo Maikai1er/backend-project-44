@@ -4,9 +4,9 @@ import { greeting, pattern, getRandomNumber } from '../src/index.js';
 const calc = () => {
   // Searching for a random function
   // 0 is a '*', 1 is a '+', 2 is a '-'
-  const randomFunction = Math.floor(Math.random() * 3);
-  const firstNumber = getRandomNumber();
-  const secondNumber = getRandomNumber();
+  const randomFunction = getRandomNumber(0, 3);
+  const firstNumber = getRandomNumber(0, 20);
+  const secondNumber = getRandomNumber(0, 20);
   let correctAnswer;
   // eslint-disable-next-line default-case
   switch (randomFunction) {
@@ -27,12 +27,8 @@ const calc = () => {
 };
 
 const playCalc = () => {
-  const name = greeting();
+  greeting();
   console.log('What is the result of the expression?');
-  for (let i = 0; i < 3; i += 1) {
-    const isTrue = pattern(calc());
-    if (isTrue === false) break;
-    if (i === 2) console.log(`Congratulations, ${name}!`);
-  }
+  pattern(calc);
 };
 export default playCalc;

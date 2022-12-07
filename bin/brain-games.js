@@ -1,7 +1,4 @@
-#!/usr/bin/node node#
-// import evenOrOdd from '../games/brain-even.js';
-// import { pattern, greeting } from '../src/index.js';
+#!/usr/bin/env node
+import { greeting } from '../src/index.js';
 
-// greeting();
-// evenOrOdd();
-// pattern();
+greeting();

@@ -8,19 +8,25 @@ const greeting = () => {
   return name;
 };
 
-const getRandomNumber = () => {
-  const randomNumber = Math.floor(Math.random() * 100);
+const getRandomNumber = (min = 0, max = 50) => {
+  const randomNumber = Math.floor(Math.random() * (max - min) + min);
   return randomNumber;
 };
 
-const pattern = (correctAnswer) => {
-  const userAnswer = readlineSync.question('Your answer: ');
-  if (correctAnswer.toString() === userAnswer.toString()) {
-    console.log('Correct!');
-  } else {
-    console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again!`);
-    return false;
+const pattern = (playRound) => {
+  let n = 0;
+  for (let i = 0; i < 3; i += 1) {
+    const correctAnswer = playRound();
+    const userAnswer = readlineSync.question('Your answer: ');
+    if (correctAnswer.toString() === userAnswer.toString()) {
+      console.log('Correct!');
+      n += 1;
+    } else {
+      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again!`);
+      break;
+    }
   }
+  if (n === 3) console.log(`Congratulations, ${name}!`);
 };
 
 export { pattern, greeting, getRandomNumber };

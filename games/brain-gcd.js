@@ -3,8 +3,8 @@ import _ from 'lodash';
 import { greeting, pattern, getRandomNumber } from '../src/index.js';
 
 const gcd = () => {
-  const firstNumber = getRandomNumber();
-  const secondNumber = getRandomNumber();
+  const firstNumber = getRandomNumber(0, 30);
+  const secondNumber = getRandomNumber(0, 30);
   console.log(`Question: ${firstNumber} ${secondNumber}`);
   const divisorsOfFirstNumber = [];
   const divisorsOfSecondNumber = [];
@@ -18,14 +18,10 @@ const gcd = () => {
   return correctAnswer;
 };
 
-const playGame = () => {
-  const name = greeting();
+const playGcd = () => {
+  greeting();
   console.log('Find the greatest common divisor of given numbers.');
-  for (let i = 0; i < 3; i += 1) {
-    const isTrue = pattern(gcd());
-    if (isTrue === false) break;
-    if (i === 2) console.log(`Congratulations, ${name}!`);
-  }
+  pattern(gcd);
 };
 
-export default playGame;
+export default playGcd;
