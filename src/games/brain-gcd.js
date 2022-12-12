@@ -1,11 +1,13 @@
 #!/usr/bin/env node
 import _ from 'lodash';
-import { greeting, gamePattern, getRandomNumber } from '../src/index.js';
+import playGame from '../index.js';
+import getRandomNumber from '../getRandomNumberFromInterval.js';
 
 const gcd = () => {
-  const firstNumber = getRandomNumber(0, 10);
-  const secondNumber = getRandomNumber(0, 10);
-  console.log(`Question: ${firstNumber} ${secondNumber}`);
+  const gameCondition = 'Find the greatest common divisor of given numbers.';
+  const firstNumber = getRandomNumber(1, 10);
+  const secondNumber = getRandomNumber(1, 10);
+  const question = `Question: ${firstNumber} ${secondNumber}`;
   const divisorsOfFirstNumber = [];
   const divisorsOfSecondNumber = [];
   const maxValue = Math.max(firstNumber, secondNumber);
@@ -15,13 +17,11 @@ const gcd = () => {
   }
   const intersection = _.intersection(divisorsOfFirstNumber, divisorsOfSecondNumber);
   const correctAnswer = intersection[intersection.length - 1];
-  return correctAnswer;
+  return [gameCondition, question, correctAnswer];
 };
 
 const playGcd = () => {
-  greeting();
-  console.log('Find the greatest common divisor of given numbers.');
-  gamePattern(gcd);
+  playGame(gcd);
 };
 
 export default playGcd;

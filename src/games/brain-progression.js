@@ -1,7 +1,9 @@
 #!/usr/bin/env node
-import { greeting, gamePattern, getRandomNumber } from '../src/index.js';
+import playGame from '../index.js';
+import getRandomNumber from '../getRandomNumberFromInterval.js';
 
 const progression = () => {
+  const gameCondition = 'What number is missing in the progression?';
   const progressionArray = [];
   let progressionToString = '';
   // Defining first number of progression;
@@ -24,13 +26,12 @@ const progression = () => {
       progressionToString += `${valueOfProgression} `;
     }
   }
-  console.log(`Question: ${progressionToString}`);
-  return correctAnswer;
+  const question = `Question: ${progressionToString}`;
+  return [gameCondition, question, correctAnswer];
 };
 
 const playProgression = () => {
-  greeting();
-  console.log('What number is missing in the progression?');
-  gamePattern(progression);
+  playGame(progression);
 };
+
 export default playProgression;
