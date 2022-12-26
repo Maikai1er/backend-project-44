@@ -4,10 +4,7 @@ import getRandomNumber from '../getRandomNumberFromInterval.js';
 
 const gameCondition = 'Find the greatest common divisor of given numbers.';
 
-const gcd = () => {
-  const firstNumber = getRandomNumber(1, 10);
-  const secondNumber = getRandomNumber(1, 10);
-  const question = `Question: ${firstNumber} ${secondNumber}`;
+const findGcd = (firstNumber, secondNumber) => {
   const divisorsOfFirstNumber = [];
   const divisorsOfSecondNumber = [];
   const maxValue = Math.max(firstNumber, secondNumber);
@@ -16,7 +13,14 @@ const gcd = () => {
     if (secondNumber % i === 0) divisorsOfSecondNumber.push(i);
   }
   const intersection = _.intersection(divisorsOfFirstNumber, divisorsOfSecondNumber);
-  const correctAnswer = intersection[intersection.length - 1];
+  return intersection[intersection.length - 1];
+};
+
+const gcd = () => {
+  const firstNumber = getRandomNumber(1, 10);
+  const secondNumber = getRandomNumber(1, 10);
+  const question = `Question: ${firstNumber} ${secondNumber}`;
+  const correctAnswer = findGcd(firstNumber, secondNumber);
   return [question, correctAnswer.toString()];
 };
 
