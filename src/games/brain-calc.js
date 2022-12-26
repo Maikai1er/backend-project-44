@@ -3,11 +3,8 @@ import getRandomNumber from '../getRandomNumberFromInterval.js';
 
 const gameCondition = 'What is the result of the expression?';
 
-const calc = () => {
-  const operators = ['+', '-', '*'];
+const calculate = (operators, firstNumber, secondNumber) => {
   const randomFunction = getRandomNumber(0, 2);
-  const firstNumber = getRandomNumber(0, 20);
-  const secondNumber = getRandomNumber(0, 20);
   let correctAnswer;
   const question = `${firstNumber} ${operators[randomFunction]} ${secondNumber}`;
   // eslint-disable-next-line default-case
@@ -22,6 +19,13 @@ const calc = () => {
       correctAnswer = firstNumber - secondNumber;
       break;
   }
+  return [correctAnswer, question];
+};
+const calc = () => {
+  const operators = ['+', '-', '*'];
+  const firstNumber = getRandomNumber(0, 20);
+  const secondNumber = getRandomNumber(0, 20);
+  const [correctAnswer, question] = calculate(operators, firstNumber, secondNumber);
   return [question, correctAnswer.toString()];
 };
 

@@ -3,18 +3,12 @@ import getRandomNumber from '../getRandomNumberFromInterval.js';
 
 const gameCondition = 'What number is missing in the progression?';
 
-const progression = () => {
+const generateProgression = (progressionLength, hiddenElementNumber, progressionStep) => {
   const progressionArray = [];
   let progressionToString = '';
+  let correctAnswer;
   // Defining first number of progression;
   let valueOfProgression = getRandomNumber();
-  let correctAnswer;
-  // Defining progression length;
-  const min = 5;
-  const max = 11;
-  const progressionLength = getRandomNumber(min, max);
-  const hiddenElementNumber = getRandomNumber(min, progressionLength);
-  const progressionStep = getRandomNumber(1, 10);
   for (let i = 0; i < progressionLength; i += 1) {
     progressionArray.push(valueOfProgression);
     valueOfProgression += progressionStep;
@@ -25,7 +19,17 @@ const progression = () => {
       progressionToString += `${valueOfProgression} `;
     }
   }
-  const question = `Question: ${progressionToString}`;
+  return [progressionToString, correctAnswer];
+};
+
+const progression = () => {
+  const min = 5;
+  const max = 11;
+  const length = getRandomNumber(min, max);
+  const hiddenElementNumber = getRandomNumber(min, length);
+  const step = getRandomNumber(1, 10);
+  const [progressionString, correctAnswer] = generateProgression(length, hiddenElementNumber, step);
+  const question = `Question: ${progressionString}`;
   return [question, correctAnswer.toString()];
 };
 
