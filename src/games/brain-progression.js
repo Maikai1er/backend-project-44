@@ -1,9 +1,9 @@
-#!/usr/bin/env node
 import playGame from '../index.js';
 import getRandomNumber from '../getRandomNumberFromInterval.js';
 
+const gameCondition = 'What number is missing in the progression?';
+
 const progression = () => {
-  const gameCondition = 'What number is missing in the progression?';
   const progressionArray = [];
   let progressionToString = '';
   // Defining first number of progression;
@@ -14,7 +14,6 @@ const progression = () => {
   const max = 11;
   const progressionLength = getRandomNumber(min, max);
   const hiddenElementNumber = getRandomNumber(min, progressionLength);
-  // Defining progression step;
   const progressionStep = getRandomNumber(1, 10);
   for (let i = 0; i < progressionLength; i += 1) {
     progressionArray.push(valueOfProgression);
@@ -27,11 +26,11 @@ const progression = () => {
     }
   }
   const question = `Question: ${progressionToString}`;
-  return [gameCondition, question, correctAnswer];
+  return [question, correctAnswer.toString()];
 };
 
 const playProgression = () => {
-  playGame(progression);
+  playGame(progression, gameCondition);
 };
 
 export default playProgression;

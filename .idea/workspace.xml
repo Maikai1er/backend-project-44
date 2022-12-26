@@ -6,21 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="5944aa1f-f23c-43f6-ba94-56070616ad69" name="Changes" comment="trying to fix brain-prime № 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/brain-calc.js" beforeDir="false" afterPath="$PROJECT_DIR$/bin/brain-calc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/brain-even.js" beforeDir="false" afterPath="$PROJECT_DIR$/bin/brain-even.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/brain-games.js" beforeDir="false" afterPath="$PROJECT_DIR$/bin/brain-games.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/brain-gcd.js" beforeDir="false" afterPath="$PROJECT_DIR$/bin/brain-gcd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/brain-prime.js" beforeDir="false" afterPath="$PROJECT_DIR$/bin/brain-prime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/brain-progression.js" beforeDir="false" afterPath="$PROJECT_DIR$/bin/brain-progression.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/games/brain-calc.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/brain-calc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/games/brain-even.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/brain-even.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/games/brain-gcd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/brain-gcd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/games/brain-prime.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/brain-prime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/games/brain-progression.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/brain-progression.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cli.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/cli.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/games/brain-calc.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/brain-calc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/games/brain-even.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/brain-even.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/games/brain-gcd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/brain-gcd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/games/brain-prime.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/brain-prime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/games/brain-progression.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/brain-progression.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wget-log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,21 +40,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Dev/Projects/backend-project-44/src/getRandomNumberFromInterval.js",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Dev/Projects/backend-project-44&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Dev\Projects\backend-project-44\src" />
@@ -103,7 +94,10 @@
       <workItem from="1670244212174" duration="27175000" />
       <workItem from="1670340982641" duration="22132000" />
       <workItem from="1670850207825" duration="2119000" />
-      <workItem from="1670853442423" duration="3065000" />
+      <workItem from="1670853442423" duration="4268000" />
+      <workItem from="1670939772802" duration="3354000" />
+      <workItem from="1671461979035" duration="28000" />
+      <workItem from="1672070735584" duration="3079000" />
     </task>
     <task id="LOCAL-00001" summary="trying to fix brain-prime">
       <created>1670453223863</created>

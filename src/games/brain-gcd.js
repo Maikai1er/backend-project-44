@@ -1,10 +1,10 @@
-#!/usr/bin/env node
 import _ from 'lodash';
 import playGame from '../index.js';
 import getRandomNumber from '../getRandomNumberFromInterval.js';
 
+const gameCondition = 'Find the greatest common divisor of given numbers.';
+
 const gcd = () => {
-  const gameCondition = 'Find the greatest common divisor of given numbers.';
   const firstNumber = getRandomNumber(1, 10);
   const secondNumber = getRandomNumber(1, 10);
   const question = `Question: ${firstNumber} ${secondNumber}`;
@@ -17,11 +17,11 @@ const gcd = () => {
   }
   const intersection = _.intersection(divisorsOfFirstNumber, divisorsOfSecondNumber);
   const correctAnswer = intersection[intersection.length - 1];
-  return [gameCondition, question, correctAnswer];
+  return [question, correctAnswer.toString()];
 };
 
 const playGcd = () => {
-  playGame(gcd);
+  playGame(gcd, gameCondition);
 };
 
 export default playGcd;

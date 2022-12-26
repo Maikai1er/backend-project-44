@@ -1,9 +1,9 @@
-#!/usr/bin/env node
 import playGame from '../index.js';
 import getRandomNumber from '../getRandomNumberFromInterval.js';
 
+const gameCondition = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
 const isPrime = () => {
-  const gameCondition = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   const number = getRandomNumber(0, 20);
   const question = `Question: ${number}`;
   let correctAnswer;
@@ -21,11 +21,11 @@ const isPrime = () => {
   } else {
     correctAnswer = 'no';
   }
-  return [gameCondition, question, correctAnswer];
+  return [question, correctAnswer.toString()];
 };
 
 const playIsPrime = () => {
-  playGame(isPrime);
+  playGame(isPrime, gameCondition);
 };
 
 export default playIsPrime;
