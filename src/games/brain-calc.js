@@ -6,7 +6,7 @@ const gameCondition = 'What is the result of the expression?';
 const calculate = (operators, firstNumber, secondNumber) => {
   const randomFunction = getRandomNumber(0, 2);
   let correctAnswer;
-  const question = `${firstNumber} ${operators[randomFunction]} ${secondNumber}`;
+  const question = `Question: ${firstNumber} ${operators[randomFunction]} ${secondNumber}`;
   // eslint-disable-next-line default-case
   switch (operators[randomFunction]) {
     case '*':
