@@ -3,33 +3,29 @@ import getRandomNumber from '../getRandomNumberFromInterval.js';
 
 const gameCondition = 'What number is missing in the progression?';
 
-const generateProgression = (progressionLength, hiddenElementNumber, progressionStep) => {
-  const progressionArray = [];
-  let progressionToString = '';
-  let correctAnswer;
-  // Defining first number of progression;
-  let valueOfProgression = getRandomNumber();
-  for (let i = 0; i < progressionLength; i += 1) {
-    progressionArray.push(valueOfProgression);
-    valueOfProgression += progressionStep;
-    if (i === (hiddenElementNumber - 1)) {
-      correctAnswer = valueOfProgression;
-      progressionToString += '.. ';
-    } else {
-      progressionToString += `${valueOfProgression} `;
-    }
+const generateProgression = (length, hiddenElement, step, firstValue) => {
+  const progression = [];
+  let value = firstValue;
+  for (let i = 0; i < length; i += 1) {
+    progression.push(value);
+    value += step;
   }
-  return [progressionToString, correctAnswer];
+  const answer = progression[hiddenElement];
+  progression[hiddenElement] = '..';
+  const progressionToString = progression.join(' ');
+  return [progressionToString, answer];
 };
 
 const progression = () => {
   const min = 5;
-  const max = 11;
+  const max = 10;
   const length = getRandomNumber(min, max);
-  const hiddenElementNumber = getRandomNumber(min, length);
+  const hiddenElement = getRandomNumber(min, length);
   const step = getRandomNumber(1, 10);
-  const [progressionString, correctAnswer] = generateProgression(length, hiddenElementNumber, step);
-  const question = `Question: ${progressionString}`;
+  const firstValue = getRandomNumber();
+  const [progressionToString, answer] = generateProgression(length, hiddenElement, step, firstValue);
+  const correctAnswer = answer;
+  const question = `Question: ${progressionToString}`;
   return [question, correctAnswer.toString()];
 };
 

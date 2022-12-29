@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5944aa1f-f23c-43f6-ba94-56070616ad69" name="Changes" comment="fixing brain-calc and brain-progression">
+    <list default="true" id="5944aa1f-f23c-43f6-ba94-56070616ad69" name="Changes" comment="fixing brain-calc">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/games/brain-calc.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/brain-calc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/games/brain-prime.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/brain-prime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/games/brain-progression.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/brain-progression.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/getRandomNumberFromInterval.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/getRandomNumberFromInterval.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +44,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Dev/Projects/backend-project-44&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Михаил/WebstormProjects/testingThings&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -91,7 +96,9 @@
       <workItem from="1670853442423" duration="4268000" />
       <workItem from="1670939772802" duration="3354000" />
       <workItem from="1671461979035" duration="28000" />
-      <workItem from="1672070735584" duration="6636000" />
+      <workItem from="1672070735584" duration="8299000" />
+      <workItem from="1672168661957" duration="2244000" />
+      <workItem from="1672323172733" duration="2145000" />
     </task>
     <task id="LOCAL-00001" summary="trying to fix brain-prime">
       <created>1670453223863</created>
@@ -135,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672091147149</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fixing brain-calc">
+      <created>1672091729292</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1672091729292</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +173,7 @@
     <MESSAGE value="fixing project" />
     <MESSAGE value="fixing brain-gcd and brain-prime" />
     <MESSAGE value="fixing brain-calc and brain-progression" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing brain-calc and brain-progression" />
+    <MESSAGE value="fixing brain-calc" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing brain-calc" />
   </component>
 </project>
