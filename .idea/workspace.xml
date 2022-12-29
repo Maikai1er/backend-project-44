@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5944aa1f-f23c-43f6-ba94-56070616ad69" name="Changes" comment="fixing brain-calc">
+    <list default="true" id="5944aa1f-f23c-43f6-ba94-56070616ad69" name="Changes" comment="fixing project (progression is not working)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/brain-calc.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/brain-calc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/brain-prime.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/brain-prime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/games/brain-gcd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/brain-gcd.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/games/brain-progression.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/brain-progression.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/getRandomNumberFromInterval.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/getRandomNumberFromInterval.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +95,7 @@
       <workItem from="1671461979035" duration="28000" />
       <workItem from="1672070735584" duration="8299000" />
       <workItem from="1672168661957" duration="2244000" />
-      <workItem from="1672323172733" duration="2145000" />
+      <workItem from="1672323172733" duration="7054000" />
     </task>
     <task id="LOCAL-00001" summary="trying to fix brain-prime">
       <created>1670453223863</created>
@@ -149,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672091729292</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fixing project (progression is not working)">
+      <created>1672325600595</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1672325600595</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +178,7 @@
     <MESSAGE value="fixing brain-gcd and brain-prime" />
     <MESSAGE value="fixing brain-calc and brain-progression" />
     <MESSAGE value="fixing brain-calc" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing brain-calc" />
+    <MESSAGE value="fixing project (progression is not working)" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing project (progression is not working)" />
   </component>
 </project>

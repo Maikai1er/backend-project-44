@@ -1,19 +1,13 @@
-import _ from 'lodash';
 import playGame from '../index.js';
 import getRandomNumber from '../getRandomNumberFromInterval.js';
 
 const gameCondition = 'Find the greatest common divisor of given numbers.';
 
 const findGcd = (firstNumber, secondNumber) => {
-  const divisorsOfFirstNumber = [];
-  const divisorsOfSecondNumber = [];
-  const maxValue = Math.max(firstNumber, secondNumber);
-  for (let i = 0; i <= maxValue; i += 1) {
-    if (firstNumber % i === 0) divisorsOfFirstNumber.push(i);
-    if (secondNumber % i === 0) divisorsOfSecondNumber.push(i);
+  if (!secondNumber) {
+    return firstNumber;
   }
-  const intersection = _.intersection(divisorsOfFirstNumber, divisorsOfSecondNumber);
-  return intersection[intersection.length - 1];
+  return findGcd(secondNumber, firstNumber % secondNumber);
 };
 
 const gcd = () => {

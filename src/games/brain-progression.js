@@ -3,28 +3,26 @@ import getRandomNumber from '../getRandomNumberFromInterval.js';
 
 const gameCondition = 'What number is missing in the progression?';
 
-const generateProgression = (length, hiddenElement, step, firstValue) => {
+const generateProgression = (length, hiddenCell, step, first) => {
   const progression = [];
-  let value = firstValue;
   for (let i = 0; i < length; i += 1) {
-    progression.push(value);
-    value += step;
+    const current = first + (step * i);
+    progression.push(current);
   }
-  const answer = progression[hiddenElement];
-  progression[hiddenElement] = '..';
+  const correctAnswer = progression[hiddenCell - 1];
+  progression[hiddenCell - 1] = '..';
   const progressionToString = progression.join(' ');
-  return [progressionToString, answer];
+  return [progressionToString, correctAnswer];
 };
 
 const progression = () => {
   const min = 5;
   const max = 10;
   const length = getRandomNumber(min, max);
-  const hiddenElement = getRandomNumber(min, length);
+  const hiddenCell = getRandomNumber(1, length);
   const step = getRandomNumber(1, 10);
-  const firstValue = getRandomNumber();
-  const [progressionToString, answer] = generateProgression(length, hiddenElement, step, firstValue);
-  const correctAnswer = answer;
+  const first = getRandomNumber();
+  const [progressionToString, correctAnswer] = generateProgression(length, hiddenCell, step, first);
   const question = `Question: ${progressionToString}`;
   return [question, correctAnswer.toString()];
 };
